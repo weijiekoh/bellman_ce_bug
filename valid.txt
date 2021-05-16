@@ -1,0 +1,84 @@
+Synthesis taken 868.479µs
+Committing coefficients
+Scalars conversion taken 109.911µs
+Multiexp taken 23.141743ms
+Commtiment taken 23.267805ms
+Committing coefficients
+Scalars conversion taken 65.866µs
+Multiexp taken 19.339679ms
+Commtiment taken 19.421331ms
+Committing coefficients
+Scalars conversion taken 117.054µs
+Multiexp taken 21.784701ms
+Commtiment taken 21.919303ms
+Committing coefficients
+Scalars conversion taken 184.56µs
+Multiexp taken 22.263817ms
+Commtiment taken 22.463398ms
+First step (witness commitment) taken 91.772116ms
+Committing coefficients
+Scalars conversion taken 61.076µs
+Multiexp taken 23.010434ms
+Commtiment taken 23.089884ms
+Second step (grand product commitment) taken 31.647554ms
+Committing coefficients
+Scalars conversion taken 211.447µs
+Multiexp taken 21.759074ms
+Commtiment taken 21.988018ms
+Committing coefficients
+Scalars conversion taken 142.076µs
+Multiexp taken 22.476277ms
+Commtiment taken 22.631954ms
+Committing coefficients
+Scalars conversion taken 223.552µs
+Multiexp taken 22.761381ms
+Commtiment taken 22.99702ms
+Committing coefficients
+Scalars conversion taken 179.657µs
+Multiexp taken 20.430656ms
+Commtiment taken 20.625445ms
+Third step (quotient calculation and commitment) taken 135.326249ms
+Fourth step (openings at z) taken 3.304995ms
+Committing coefficients
+Scalars conversion taken 70.369µs
+Multiexp taken 21.232126ms
+Commtiment taken 21.314281ms
+Committing coefficients
+Scalars conversion taken 327.459µs
+Multiexp taken 21.541371ms
+Commtiment taken 21.882456ms
+Fifth step (proving opening at z) taken 44.905994ms
+Proving taken 307.028748ms
+proof.num_inputs: 1
+proof.n: 1023
+proof.input_values:
+Fr(0x0000000000000000000000000000000000000000000000000000000000000000)
+proof.wire_commitments:
+G1(x=Fq(0x136ff0d6744c5dd24923c3126daf4b781d30d67ddf2a489ce484a7f94bfbc4fc), y=Fq(0x28473c94c94a557d0caa53a479164bc03475b32c3045b729b06585c9f6c13565))
+G1(x=Fq(0x108be6a09cfdb36e8dba96862a92ee44c77a9feb73637d8865f63c8ccaf047d5), y=Fq(0x13fe67a9a3c5b46e1f4993a2c619a1a8fcff9f90e394e0b0005d2e188073e38a))
+G1(x=Fq(0x25c7d7ca543e487825f2f2cc834641faf9a4a4fb5ca089e3222f0a30557b6a44), y=Fq(0x197c9d02061f092f092a95135b2eb4a05d65b75427a1ce59d453348dfec70d68))
+G1(x=Fq(0x219a97cae3d5cb9446e1b7019c075f2528cb011af090fdf80e84bcc1ad5c24f2), y=Fq(0x2eed7c0ea933827e088d84e5185babd25d77dee2192f2bed271f6aca3c5bb125))
+proof.grand_product_commitment: G1(x=Fq(0x07e654a5278240d6b65e224861bfa814e9430e0b1f806c5fa54011de31ebf0f5), y=Fq(0x02dbf2907d2b92910cf4116d42a6787394c1a04d54aed6d7184783348b3a43fe))
+proof.quotient_poly_commitments:
+G1(x=Fq(0x26ecdf0d8272befe8c0c114fd37aebce3bb8fac5a28171a637230650cd5253cb), y=Fq(0x2701ab05db6eeff5ffa670eb560117e3cc2585fcb065881f4d08df5ce4014b7f))
+G1(x=Fq(0x05fdfe8c736fc2db1672330cd59f73ad01b66917bd632d8ff125868f2ddc9a69), y=Fq(0x0c1f4c5726a74644a3681ec98b640e073a7f68e562ab65bf21d1daa0f7bde97f))
+G1(x=Fq(0x26fb54a0f7a9100b66c51701be88379935b7b789498ce5d8ac66ae39c0215f5b), y=Fq(0x20f31ba1f17736f17a6ed7d5eb153ad6c5d7fec6c41e193896f1c1d20ab5629c))
+G1(x=Fq(0x1efcf01941f8aecf3ad79ffd3a1c3f32c0eac2d6dd0a4c6140acfa819a8a024c), y=Fq(0x10920d470d58e0e9bcac1ff765998eae4ae1afe9667abd04570432027d03b87b))
+proof.wire_values_at_z:
+Fr(0x05b4af8b4bb831cb25bd94cc70a187a885de59041eed0db0d5fcc2e95459d241)
+Fr(0x26f85ccaa274c2d14461a00d7b576fb181770529862e98c285ea72fadc537406)
+Fr(0x1c317510f74e4153779db47ba1c92089f175f0b96e9b2f13b3a0bc707b72fc65)
+Fr(0x275c37999a88240b8d9bd77ca18c6c5ff767852be8a325b05971a38d9810c4c3)
+proof.wire_values_at_z_omega:
+Fr(0x29675193174b205a35c9aba28ed2b86a37981f3cc9e80904c526d71a139a11eb)
+proof.grand_product_at_z_omega: Fr(0x163f8cdb4b332415d9bf5a0adb65d1bfd90553af367e4f723eb717b5fc9601e5)
+proof.quotient_polynomial_at_z: Fr(0x197d598162977e374c4186a3c466cc3bc84d0a51aca4ccdc4a2d24359b9874e8)
+proof.linearization_polynomial_at_z: Fr(0x20c1a412a18a04d37253d32f649a2e3305afb3bae34ccc608c237135b4ce2447)
+proof.permutation_polynomials_at_z:
+Fr(0x12b537eb065fc258564943444bcf929d2ee9b9bb4f0a21a682a6ba5adc95b101)
+Fr(0x1d90c02a311aa26cbdd7099635d577030435dc5f1fb3860a1c0d6d9df550844a)
+Fr(0x1ef6d21b7c68faffc274a6f821ffb8c01a8d711398dbebbb1abc832c54a75d45)
+proof.opening_at_z_proof: G1(x=Fq(0x106d45625fa6aaf4a7222e3b9b02565d2484a768d6b2b6d3ed2624657de83c7e), y=Fq(0x1b6c0f65125d5d5600f6e4e61a0ebf2a358b2ace5ee8d02b97d175d583dc97a5))
+proof.opening_at_z_omega_proof: G1(x=Fq(0x05a9a24328df520291c63cdfe58ed0e27db283ce9af20d90df677f4d938600cb), y=Fq(0x2aa2b74c71a72e73c61fb265cf2c975f1746aba6c05458c70d89ed8d7f680b7c))
+true
+Proof is valid

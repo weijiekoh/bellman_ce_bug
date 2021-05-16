@@ -137,7 +137,46 @@ pub fn test_plonk() {
 
     let writer = File::create("proof.bin").unwrap();
     proof.write(writer).unwrap();
+    
+    println!("proof.num_inputs: {}", proof.num_inputs);
+    println!("proof.n: {}", proof.n);
 
+    println!("proof.input_values:");
+    for i in 0..proof.input_values.len() {
+        println!("{}", proof.input_values[i].to_string());
+    }
+
+    println!("proof.wire_commitments:");
+    for i in 0..proof.wire_commitments.len() {
+        println!("{}", proof.wire_commitments[i].to_string());
+    }
+
+    println!("proof.grand_product_commitment: {}", proof.grand_product_commitment);
+
+    println!("proof.quotient_poly_commitments:");
+    for i in 0..proof.quotient_poly_commitments.len() {
+        println!("{}", proof.quotient_poly_commitments[i].to_string());
+    }
+
+    println!("proof.wire_values_at_z:");
+    for i in 0..proof.wire_values_at_z.len() {
+        println!("{}", proof.wire_values_at_z[i].to_string());
+    }
+
+    println!("proof.wire_values_at_z_omega:");
+    for i in 0..proof.wire_values_at_z_omega.len() {
+        println!("{}", proof.wire_values_at_z_omega[i].to_string());
+    }
+    println!("proof.grand_product_at_z_omega: {}", proof.grand_product_at_z_omega);
+    println!("proof.quotient_polynomial_at_z: {}", proof.quotient_polynomial_at_z);
+    println!("proof.linearization_polynomial_at_z: {}", proof.linearization_polynomial_at_z);
+
+    println!("proof.permutation_polynomials_at_z:");
+    for i in 0..proof.permutation_polynomials_at_z.len() {
+        println!("{}", proof.permutation_polynomials_at_z[i].to_string());
+    }
+
+    println!("proof.opening_at_z_proof: {}", proof.opening_at_z_proof.to_string());
     println!("proof.opening_at_z_omega_proof: {}", proof.opening_at_z_omega_proof.to_string());
 
     let vk_data: &[u8] = load_bytes!("../circuits/Test2.vk");
