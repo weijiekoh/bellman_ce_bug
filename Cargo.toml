@@ -1,5 +1,5 @@
 [package]
-name = "plonk-wasm"
+name = "bellman-bug-demo"
 version = "0.1.0"
 authors = ["Koh Wei Jie <contact@kohweijie.com>"]
 edition = "2018"
