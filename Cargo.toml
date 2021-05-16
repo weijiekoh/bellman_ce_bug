@@ -1,0 +1,36 @@
+[package]
+name = "plonk-wasm"
+version = "0.1.0"
+authors = ["Koh Wei Jie <contact@kohweijie.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+bytebuffer-rs = "0.3.1"
+anyhow = "1.0.34"
+bellman_ce = { git = "https://github.com/matter-labs/bellman", branch = "beta", default-features = false, features = [ "wasm", "plonk" ] }
+byteorder = "1"
+cfg-if = "1.0.0"
+clap = { package = "clap-v3", version = "3.0.0-beta.1" } # todo: replace with official v3 when it's released to crates.io
+env_logger = "0.8.2"
+exitcode = "1.1.2"
+futures = "0.3"
+hex-literal = "0.2.1"
+itertools = "0.8.1"
+load_file = "1.0.0"
+log = "0.4.11"
+num-bigint = "0.2.3"
+num-traits = "0.2.8"
+prost = { version = "0.7.0", optional = true }
+rand = "0.4"
+serde = { version = "1.0", features = [ "derive" ] }
+serde_json = "1.0"
+
+[dev-dependencies]
+wasm-bindgen-test = "0.3.13"
+
+[profile.release]
+# Tell `rustc` to optimize for small code size.
+opt-level = "s"
