@@ -1,16 +1,16 @@
 # The bug
 
-The proof which this binary generates is of a Poseidon circuit with 240
-constraints, originally produced using `circom`. I'm trying to compile Plonk
-proof support from the `bellman_ce` repository to wasm but the proof that's
-generated is invalid. The `opening_at_z_omega_proof` value of the proof
+This repository demonstrates a bug in the [bellman](https://github.com/matter-labs/bellman) library (commit
+`455480a2db44ecc0423785b295981074800913e6` in the `beta` branch).
+
+The code in this repository produces a binary which generates and verifies a Plonk proof of a Poseidon hash. The circuit has 240
+constraints and is originally produced using `circom`. 
+
+The `opening_at_z_omega_proof` value of the proof
 differs between the `multicore` and `wasm` features.
 
 If you compile the code using the `multicore` feature, however, the proof is
 valid. `multicore` code won't run in browser wasm, though.
-
-This repository demonstrates a bug in the [bellman] library (commit
-`455480a2db44ecc0423785b295981074800913e6` in the `beta` branch).
 
 ## How to reproduce it
 
@@ -25,7 +25,7 @@ cargo build --release
 Run the executable:
 
 ```bash
-./target/release/bellman_bug_demo
+./target/release/bellman-bug-demo
 ```
 
 The output should end with:
@@ -54,7 +54,7 @@ Recompile the binary and run it again:
 
 ```
 cargo build --release && \
-./target/release/bellman_bug_demo
+./target/release/bellman-bug-demo
 ```
 
 The output should now end with:
